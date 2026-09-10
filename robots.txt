@@ -1,0 +1,5 @@
+# Demonstration site for a fictional organization. Keep out of search engines
+# until this is deliberately made public (remove this file and the noindex meta
+# tags on the pages).
+User-agent: *
+Disallow: /
