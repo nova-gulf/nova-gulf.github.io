@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Guest Wi-Fi — Nova Gulf</title>
+  <meta name="description" content="Nova Gulf guest Wi-Fi sign-in: register for internet access and choose what Nova Gulf may contact you about.">
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="../index.html" aria-label="Nova Gulf home">
+        <svg width="38" height="38" viewBox="0 0 38 38" role="img" aria-hidden="true" focusable="false">
+          <circle cx="19" cy="19" r="18" fill="#0b2545"/>
+          <circle cx="19" cy="19" r="18" fill="none" stroke="#c9a227" stroke-width="1.5"/>
+          <text x="19" y="24.5" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-weight="700" fill="#ffffff">NG</text>
+        </svg>
+        <span class="brand-name">Nova Gulf<small>Guest Wi-Fi</small></span>
+      </a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="../index.html">Home</a>
+        <a href="../contact/">Contact</a>
+        <a href="../privacy-center/" class="nav-cta">Privacy Center</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="demo-banner">
+    Demonstration environment — Nova Gulf is a fictional organization used for product demonstrations.
+  </div>
+
+  <section class="page-head">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="../index.html">Home</a> <span aria-hidden="true">/</span>
+        <span aria-current="page">Guest Wi-Fi</span>
+      </nav>
+      <h1>Connect to Nova Gulf Guest Wi-Fi</h1>
+      <p>
+        Register once to get online. We ask for the minimum we need to give you access —
+        everything beyond that is your choice, and you can change it later in the
+        <a href="../privacy-center/">Privacy Center</a>.
+      </p>
+    </div>
+  </section>
+
+  <main id="main">
+
+    <div class="container">
+
+      <div class="wifi-status" role="status">
+        <span class="wifi-dot" aria-hidden="true"></span>
+        <span><strong>NOVAGULF-GUEST</strong> — connected to the network, not yet to the internet</span>
+      </div>
+
+      <form class="form-card" id="wifi-form" novalidate>
+
+        <h2 class="form-title">Guest registration</h2>
+        <p class="field-hint">
+          Fields marked <span class="req" aria-hidden="true">*</span> are required for access.
+        </p>
+
+        <div class="callout callout-warn">
+          <strong>This form does not connect you to anything.</strong> It is part of a
+          demonstration site and runs entirely in your browser — nothing you type is stored
+          or transmitted. Do not enter real personal data.
+        </div>
+
+        <fieldset>
+          <legend>About you</legend>
+          <p class="field-hint">We use these details to identify your session and to meet the record-keeping rules that apply to public Wi-Fi.</p>
+          <div class="form-row">
+            <div class="field">
+              <label for="first-name">First name <span class="req" aria-hidden="true">*</span></label>
+              <input type="text" id="first-name" name="first-name" autocomplete="given-name" required>
+            </div>
+            <div class="field">
+              <label for="last-name">Last name <span class="req" aria-hidden="true">*</span></label>
+              <input type="text" id="last-name" name="last-name" autocomplete="family-name" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="field">
+              <label for="mobile">Mobile number <span class="req" aria-hidden="true">*</span></label>
+              <input type="tel" id="mobile" name="mobile" autocomplete="tel" placeholder="+971 50 000 0000" required>
+              <p class="field-hint">We send your access code to this number.</p>
+            </div>
+            <div class="field">
+              <label for="email">Email <span class="field-optional">(optional)</span></label>
+              <input type="email" id="email" name="email" autocomplete="email">
+              <p class="field-hint">Only needed if you want the options below.</p>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="field">
+              <label for="visit-type">I am here as <span class="req" aria-hidden="true">*</span></label>
+              <select id="visit-type" name="visit-type" required>
+                <option value="">Select one</option>
+                <option>Visitor</option>
+                <option>Customer</option>
+                <option>Contractor or supplier</option>
+                <option>Event attendee</option>
+                <option>Job applicant</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="location">Location <span class="req" aria-hidden="true">*</span></label>
+              <select id="location" name="location" required>
+                <option value="">Select one</option>
+                <option>Dubai — Group headquarters</option>
+                <option>Abu Dhabi — Energy &amp; Utilities</option>
+                <option>Riyadh — Financial Services</option>
+                <option>Doha — Logistics &amp; Ports</option>
+                <option>Cairo — Technology</option>
+                <option>Manama — Real Estate</option>
+              </select>
+            </div>
+          </div>
+          <div class="field">
+            <label for="company">Company or organisation <span class="field-optional">(optional)</span></label>
+            <input type="text" id="company" name="company" autocomplete="organization">
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Required to get online</legend>
+          <label class="declaration" for="consent-terms">
+            <input type="checkbox" id="consent-terms" name="consent-terms">
+            <span>
+              I accept the Guest Wi-Fi <strong>Acceptable Use Policy</strong> and understand that
+              Nova Gulf keeps a record of this session — the device identifier, the time you
+              connected and disconnected, and the details above — for <strong>12 months</strong>,
+              because the law governing public internet access requires it.
+              <span class="req" aria-hidden="true">*</span>
+            </span>
+          </label>
+          <p class="field-hint">
+            This one is not a choice: without it we cannot lawfully give you access. Everything
+            below is.
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Your choices — all optional, all separate</legend>
+          <p class="field-hint">
+            Nothing here is pre-ticked and nothing here affects your Wi-Fi. Tick only what you
+            want. You can change any of it later, or withdraw all of it, in the
+            <a href="../privacy-center/">Privacy Center</a>.
+          </p>
+          <div class="checks">
+            <label class="check-item" for="consent-email-marketing">
+              <input type="checkbox" id="consent-email-marketing" name="consent-email-marketing">
+              <span><strong>Email me</strong> about Nova Gulf services, offers and events.</span>
+            </label>
+            <label class="check-item" for="consent-sms-marketing">
+              <input type="checkbox" id="consent-sms-marketing" name="consent-sms-marketing">
+              <span><strong>Message me</strong> on SMS or WhatsApp about the same.</span>
+            </label>
+            <label class="check-item" for="consent-analytics">
+              <input type="checkbox" id="consent-analytics" name="consent-analytics">
+              <span><strong>Use my visit data</strong> — which areas of the site I connect from, and for how long — to understand how the venue is used.</span>
+            </label>
+            <label class="check-item" for="consent-partners">
+              <input type="checkbox" id="consent-partners" name="consent-partners">
+              <span><strong>Share my details with Nova Gulf partners</strong> at this location, so they can contact me with their own offers.</span>
+            </label>
+          </div>
+        </fieldset>
+
+        <div class="form-actions">
+          <button type="submit" class="btn btn-primary">Connect to Wi-Fi</button>
+          <button type="reset" class="btn btn-secondary">Clear the form</button>
+        </div>
+        <p class="form-error" id="form-error" role="alert"></p>
+
+      </form>
+
+      <div class="confirm-panel wifi-confirm" id="confirm-panel" tabindex="-1" role="region" aria-label="Session summary">
+        <h2>You would now be online</h2>
+        <p>
+          Nothing left your browser and no Wi-Fi session was created. On a live network this is
+          the point where your access is granted and your choices are recorded.
+        </p>
+        <span class="confirm-ref" id="confirm-ref">—</span>
+
+        <table class="confirm-summary">
+          <caption>Session and identity</caption>
+          <tbody id="confirm-session-body"></tbody>
+        </table>
+
+        <table class="confirm-summary consent-table">
+          <caption>Consent — one decision per purpose</caption>
+          <thead>
+            <tr><th scope="col">Purpose</th><th scope="col" class="col-basis">Lawful basis</th><th scope="col">Your decision</th></tr>
+          </thead>
+          <tbody id="confirm-consent-body"></tbody>
+        </table>
+
+        <div class="confirm-actions">
+          <button type="button" class="btn btn-secondary" id="btn-copy">Copy this record</button>
+          <button type="button" class="btn btn-primary" id="btn-again">Start over</button>
+        </div>
+      </div>
+
+    </div>
+
+    <section class="section section-alt">
+      <div class="container">
+        <h2>What we do with each thing we asked for</h2>
+        <p class="section-intro">
+          Every field above exists for a stated reason, and each reason stands on its own
+          legal footing. Nothing is bundled.
+        </p>
+        <div class="table-wrap">
+          <table class="data-table">
+            <caption class="visually-hidden">Purpose and lawful basis for each item collected on the guest Wi-Fi form</caption>
+            <thead>
+              <tr>
+                <th scope="col">What we collect</th>
+                <th scope="col">Why</th>
+                <th scope="col">Basis</th>
+                <th scope="col">Kept for</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Name, mobile number, visitor type, location</td><td>Identify your session and issue your access code</td><td><span class="pill pill-req">Required for access</span></td><td>12 months</td></tr>
+              <tr><td>Device identifier, connect and disconnect times</td><td>Network security and the record-keeping the law requires of public internet access</td><td><span class="pill pill-req">Legal obligation</span></td><td>12 months</td></tr>
+              <tr><td>Email address</td><td>Only used for the optional choices you tick</td><td><span class="pill">Your consent</span></td><td>Until you withdraw</td></tr>
+              <tr><td>Marketing by email</td><td>Tell you about services, offers and events</td><td><span class="pill">Your consent</span></td><td>Until you withdraw</td></tr>
+              <tr><td>Marketing by SMS or WhatsApp</td><td>The same, on a channel you chose</td><td><span class="pill">Your consent</span></td><td>Until you withdraw</td></tr>
+              <tr><td>Venue analytics</td><td>Understand how areas of the site are used</td><td><span class="pill">Your consent</span></td><td>Until you withdraw</td></tr>
+              <tr><td>Sharing with partners at this location</td><td>Let them contact you with their own offers</td><td><span class="pill">Your consent</span></td><td>Until you withdraw</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="callout">
+          <strong>Withdrawing is as easy as giving.</strong> Any choice you make here can be
+          reversed in the <a href="../privacy-center/">Privacy Center</a> without giving a reason
+          and without losing your Wi-Fi access. Declining a choice here has no effect on whether
+          you get online.
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="contact-band">
+          <div>
+            <h2>Changed your mind?</h2>
+            <p>Withdraw any consent, or ask what we hold about you, in the Privacy Center.</p>
+          </div>
+          <a href="../privacy-center/" class="btn btn-primary">Go to the Privacy Center</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <span>© 2026 Nova Gulf Group.</span>
+      <span class="footer-links">
+        <a href="../index.html">Home</a>
+        <a href="../contact/">Contact us</a>
+        <a href="../privacy-center/">Privacy Center</a>
+      </span>
+      <span>Nova Gulf is a fictional organization used for product demonstrations.</span>
+    </div>
+  </footer>
+
+  <script src="../assets/js/wifi.js"></script>
+
+  <!-- CONSENT PLATFORM HOOK — intentionally empty.
+       A generated form-consent snippet is pasted immediately above </body>, which is
+       here. The form above is built to be parsed by a form-scanning plugin: one <form>
+       element, a real submit button, stable name/id attributes on every field, and one
+       checkbox per purpose with nothing pre-ticked. Do not merge the purpose checkboxes
+       into a single "I agree" control — separate controls are what make the captured
+       record per-purpose rather than all-or-nothing. -->
+
+</body>
+</html>

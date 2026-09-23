@@ -898,6 +898,49 @@ legend {
   font-size: 0.88em;
 }
 
+/* ---------- Guest Wi-Fi page ---------- */
+
+.wifi-status {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-left: 4px solid var(--gold);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 12px 18px;
+  margin: -20px auto 20px;
+  font-size: 0.93rem;
+  color: var(--ink);
+  position: relative;
+}
+
+.wifi-status .wifi-dot {
+  flex: none;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--gold);
+  box-shadow: 0 0 0 4px rgba(201, 162, 39, 0.18);
+}
+
+/* The status strip already lifts into the page head, so neither the form card nor
+   the panel that replaces it may lift again — they would land on top of it. */
+#wifi-form.form-card,
+.wifi-confirm.confirm-panel { margin-top: 0; }
+
+.confirm-summary thead th {
+  background: #fafcfe;
+  color: var(--muted);
+  font-weight: 700;
+  font-size: 0.82rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.confirm-summary + .confirm-summary { margin-top: 0; }
+
 /* ---------- Responsive ---------- */
 
 @media (max-width: 720px) {
@@ -910,6 +953,14 @@ legend {
   .embed-stage { min-height: 1700px; }
   .embed-shell { margin-top: -20px; }
   .site-footer .container { flex-direction: column; align-items: flex-start; }
+  .wifi-status { margin-top: -12px; align-items: flex-start; }
+  /* The consent table must NOT stack: three cells in a column with no headers
+     reads as three unrelated words. Keep it a table and drop the basis column,
+     which is the one a visitor needs least on a phone. */
+  .consent-table th, .consent-table td { display: table-cell; border-bottom: 1px solid var(--line); padding: 8px 10px; }
+  .consent-table th[scope="row"] { width: auto; }
+  .consent-table .col-basis, .consent-table td:nth-child(2) { display: none; }
+  .consent-table { font-size: 0.86rem; }
   .contact-meta li { flex-direction: column; gap: 2px; }
   .contact-meta .label { width: auto; }
 }
