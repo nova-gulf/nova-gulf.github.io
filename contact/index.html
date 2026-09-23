@@ -2,6 +2,23 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+
+  <!-- Securiti cookie consent. Auto-blocking MUST stay the first script in <head>:
+       no async, never inside a tag manager. The SDK loader follows it. -->
+  <script type="text/javascript" src="https://cdn-prod.securiti.ai/consent/auto_blocking/99e6777b-d10d-44b4-a2a4-6ee50ad5d806/f7450d10-7ff8-49ae-b8f8-a1dac34dd97c.js"></script>
+  <script>
+  (function () {
+    var s = document.createElement('script');
+    s.src = 'https://cdn-prod.securiti.ai/consent/cookie-consent-sdk-loader.js';
+    s.setAttribute('data-tenant-uuid', '99e6777b-d10d-44b4-a2a4-6ee50ad5d806');
+    s.setAttribute('data-domain-uuid', 'f7450d10-7ff8-49ae-b8f8-a1dac34dd97c');
+    s.setAttribute('data-backend-url', 'https://app.securiti.ai');
+    s.setAttribute('data-skip-css', 'false');
+    s.defer = true;
+    var parent_node = document.head || document.body;
+    parent_node.appendChild(s);
+  })()
+  </script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="robots" content="noindex, nofollow">
   <title>Contact us — Nova Gulf</title>
