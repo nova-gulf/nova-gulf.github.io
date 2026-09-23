@@ -833,6 +833,71 @@ legend {
 
 .footer-links { display: flex; gap: 18px; flex-wrap: wrap; }
 
+/* ---------- Contact page ---------- */
+
+.form-title {
+  margin: 0 0 4px;
+  font-size: 1.35rem;
+  color: var(--navy);
+}
+
+.field-optional {
+  font-weight: 500;
+  color: var(--muted);
+  font-size: 0.86rem;
+}
+
+/* Revealed by contact.js only when the privacy topic is chosen. */
+.topic-hint {
+  display: none;
+  margin: 10px 0 0;
+  padding: 10px 14px;
+  border-left: 4px solid var(--teal);
+  background: var(--bg);
+  border-radius: 0 8px 8px 0;
+  color: var(--ink);
+  font-size: 0.9rem;
+}
+
+.topic-hint.visible { display: block; }
+.topic-hint a { color: var(--teal-dark); font-weight: 700; }
+
+.declaration + .declaration { margin-top: 10px; }
+.declaration-optional { color: var(--muted); }
+
+.card a { color: var(--teal-dark); font-weight: 600; }
+
+.contact-meta {
+  list-style: none;
+  margin: 12px 0 0;
+  padding: 0;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+.contact-meta li {
+  display: flex;
+  gap: 10px;
+  padding: 6px 0;
+  border-top: 1px solid var(--line);
+  word-break: break-word;
+}
+
+.contact-meta .label {
+  flex: none;
+  width: 72px;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.section-intro code {
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: 5px;
+  padding: 1px 6px;
+  font-size: 0.88em;
+}
+
 /* ---------- Responsive ---------- */
 
 @media (max-width: 720px) {
@@ -845,6 +910,8 @@ legend {
   .embed-stage { min-height: 1700px; }
   .embed-shell { margin-top: -20px; }
   .site-footer .container { flex-direction: column; align-items: flex-start; }
+  .contact-meta li { flex-direction: column; gap: 2px; }
+  .contact-meta .label { width: auto; }
 }
 
 @media (prefers-reduced-motion: reduce) {
