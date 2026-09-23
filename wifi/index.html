@@ -277,12 +277,26 @@
   <script src="../assets/js/wifi.js"></script>
 
   <!-- CONSENT PLATFORM HOOK — intentionally empty.
-       A generated form-consent snippet is pasted immediately above </body>, which is
-       here. The form above is built to be parsed by a form-scanning plugin: one <form>
+       A generated form-consent snippet is pasted at the very end of the body,
+       which is here. The form above is built to be parsed by a form-scanning plugin: one <form>
        element, a real submit button, stable name/id attributes on every field, and one
        checkbox per purpose with nothing pre-ticked. Do not merge the purpose checkboxes
        into a single "I agree" control — separate controls are what make the captured
        record per-purpose rather than all-or-nothing. -->
+
+
+  <!-- Cookie tag layer — demonstration only, see assets/js/tag-*.js.
+       Four separate scripts, ONE PER COOKIE CATEGORY. That split is deliberate:
+       Securiti's auto-blocking blocks at the initiator-script level, so a single
+       script dropping cookies across categories raises a categorization conflict.
+       Keeping them apart makes per-category blocking clean and lets "accept
+       Analytics only" actually behave. Do not merge them.
+       Every one is inert: first-party cookies with real vendor names and real
+       formats, no network request, nothing sent anywhere. -->
+  <script src="../assets/js/tag-analytics.js"></script>
+  <script src="../assets/js/tag-advertising.js"></script>
+  <script src="../assets/js/tag-performance.js"></script>
+  <script src="../assets/js/tag-social.js"></script>
 
 </body>
 </html>

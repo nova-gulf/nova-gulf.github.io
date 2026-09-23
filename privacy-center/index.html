@@ -183,6 +183,16 @@
         strictly necessary cookie to prevent cross-site request forgery. It collects no
         personal information about you.
       </div>
+      <div class="callout callout-warn">
+        <strong>About the other cookies on this site.</strong> Nova Gulf is a demonstration
+        site, and its pages deliberately set a set of cookies carrying the names real
+        analytics and advertising products use — <code>_ga</code>, <code>_fbp</code>,
+        <code>_gcl_au</code> and others — so that cookie-scanning and consent tools have
+        something realistic to find. <strong>Every one of them is inert.</strong> They are
+        written by this site, in your browser, with random values; no request is made to
+        Google, Meta, Microsoft or anyone else, nothing is measured, and nothing is sent
+        anywhere. Clearing your cookies removes them and nothing is retained.
+      </div>
     </div>
   </section>
 
@@ -212,6 +222,20 @@
       <span>Nova Gulf is a fictional organization used for product demonstrations.</span>
     </div>
   </footer>
+
+
+  <!-- Cookie tag layer — demonstration only, see assets/js/tag-*.js.
+       Four separate scripts, ONE PER COOKIE CATEGORY. That split is deliberate:
+       Securiti's auto-blocking blocks at the initiator-script level, so a single
+       script dropping cookies across categories raises a categorization conflict.
+       Keeping them apart makes per-category blocking clean and lets "accept
+       Analytics only" actually behave. Do not merge them.
+       Every one is inert: first-party cookies with real vendor names and real
+       formats, no network request, nothing sent anywhere. -->
+  <script src="../assets/js/tag-analytics.js"></script>
+  <script src="../assets/js/tag-advertising.js"></script>
+  <script src="../assets/js/tag-performance.js"></script>
+  <script src="../assets/js/tag-social.js"></script>
 
 </body>
 </html>
