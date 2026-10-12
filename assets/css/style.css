@@ -968,3 +968,25 @@ legend {
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
 }
+
+/* ---------- Health Care: bilingual labels, tablet touch targets ---------- */
+
+/* Arabic sits directly under its English line. dir="rtl" is set on each span, so
+   punctuation and mixed numerals order correctly without a page-level direction. */
+.ar {
+  display: block;
+  margin-top: 2px;
+  color: var(--muted);
+  font-size: 0.95em;
+  font-weight: 400;
+  line-height: 1.7;
+  font-family: "Segoe UI", Tahoma, "Geeza Pro", "Noto Naskh Arabic", Arial, sans-serif;
+  text-align: right;
+}
+.ar-h1 { font-size: 0.7em; color: inherit; opacity: 0.85; }
+.hc-form .check-wrap { display: block; }
+.hc-form .check-item, .hc-form .declaration { min-height: 52px; }
+.hc-form .check-item input, .hc-form .declaration input { width: 22px; height: 22px; }
+.hc-form .detail { margin: 6px 0 4px 34px; }
+.hc-form .detail[hidden] { display: none; }
+.hc-form input[type="text"], .hc-form input[type="tel"], .hc-form input[type="email"] { min-height: 48px; font-size: 1rem; }
