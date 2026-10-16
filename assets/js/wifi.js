@@ -1,7 +1,8 @@
 /* Nova Gulf — Guest Wi-Fi registration (static demo).
 
-   Client-side only: nothing is stored or transmitted, and no Wi-Fi session is
-   created. The point of the page is the record it would have produced, so on
+   No Wi-Fi session is created and the details stay in the browser. Only the
+   email address and the four optional choices are sent, by Securiti Form
+   Consent (the snippet at the foot of the page), to record consent. The point of the page is the record it would have produced, so on
    submit it renders that record: the identity fields, and one row per purpose
    with the lawful basis and the visitor's decision.
 
@@ -179,9 +180,15 @@ const WIFI_CONFIG = {
     };
 
     renderSummary(lastSession);
-    form.hidden = true;
-    panel.classList.add("visible");
-    panel.focus();
+
+    /* Securiti Form Consent reads the ticked boxes from the form after this
+       handler returns. Hiding the form first makes it read every box as
+       unticked and record a Decline for each purpose. Give it a moment. */
+    window.setTimeout(function () {
+      form.hidden = true;
+      panel.classList.add("visible");
+      panel.focus();
+    }, 800);
   });
 
   form.addEventListener("reset", clearError);
