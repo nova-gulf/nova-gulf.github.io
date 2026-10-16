@@ -86,8 +86,9 @@
 
         <div class="callout callout-warn">
           <strong>This form does not connect you to anything.</strong> It is part of a
-          demonstration site and runs entirely in your browser — nothing you type is stored
-          or transmitted. Do not enter real personal data.
+          demonstration site. Your name, mobile number and other details stay in your browser.
+          Only your email address and your four optional choices below are sent, to record
+          your consent. Do not enter real personal data.
         </div>
 
         <fieldset>
@@ -316,6 +317,23 @@
   <script src="../assets/js/tag-advertising.js"></script>
   <script src="../assets/js/tag-performance.js"></script>
   <script src="../assets/js/tag-social.js"></script>
+
+  <!-- Securiti Form Consent — records the email address and the four optional choices
+       on submit. Generated from the console (Universal Consent > Form-Based Consents >
+       NovaGulfGuestWiFi); regenerate it whenever the form's fields change. -->
+  <script src='https://cdn-prod.securiti.ai/consent/form-consent-sdk.js'></script>
+  <script>
+  window.addEventListener('load', function() {
+  FormConsentSDK.initialize({
+  codeGenMetadata:{"formPropertyId":"1","formSelector":"[id*=\"wifi-form\"]","subjectIdentifiers":[{"name":"email","selector":"#email","isPrimary":true}],"consentIdentifiers":[{"type":"checkbox","name":"consent-email-marketing","selector":"#consent-email-marketing","propertyId":156,"consentValue":"checked"},{"type":"checkbox","name":"consent-sms-marketing","selector":"#consent-sms-marketing","propertyId":157,"consentValue":"checked"},{"type":"checkbox","name":"consent-analytics","selector":"#consent-analytics","propertyId":158,"consentValue":"checked"},{"type":"checkbox","name":"consent-partners","selector":"#consent-partners","propertyId":159,"consentValue":"checked"}],"consentTrigger":{"action":"submit","selector":""}},
+  url: 'https://app.securiti.ai/privaci/v1/',
+  cmpQuill:'6f8b260e-3814-421c-9441-dfe3aa4ffce7',
+  orgId:'1',
+  onConsentSuccess: null,
+  onConsentFailure: null
+  })
+  })
+  </script>
 
 </body>
 </html>
