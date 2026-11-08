@@ -367,7 +367,20 @@
   <script src="../assets/js/tag-biometrics.js"></script>
   <script src="../assets/js/tag-unclassified.js"></script>
 
-  <!-- SECURITI-FORM-CONSENT-SNIPPET: master pastes the generated snippet here -->
+  <!-- Securiti Form Consent: generated from the console (Universal Consent > Form-Based Consents > NovaGulfPreferences). Regenerate when the form fields change. -->
+  <script src='https://cdn-prod.securiti.ai/consent/form-consent-sdk.js'></script>
+<script>
+window.addEventListener('load', function() {
+    FormConsentSDK.initialize({
+        codeGenMetadata:{"formPropertyId":"2","formSelector":"[id*=\"preferences-form\"]","subjectIdentifiers":[{"name":"email","selector":"#email","isPrimary":true},{"name":"phone","selector":"#phone","isPrimary":false}],"consentIdentifiers":[{"type":"checkbox","name":"consent-email-marketing","selector":"#consent-email-marketing","propertyId":593,"consentValue":"checked"},{"type":"checkbox","name":"consent-newsletter","selector":"#consent-newsletter","propertyId":594,"consentValue":"checked"},{"type":"checkbox","name":"consent-product-updates","selector":"#consent-product-updates","propertyId":595,"consentValue":"checked"},{"type":"checkbox","name":"consent-sms-whatsapp","selector":"#consent-sms-whatsapp","propertyId":596,"consentValue":"checked"},{"type":"checkbox","name":"consent-phone-calls","selector":"#consent-phone-calls","propertyId":597,"consentValue":"checked"},{"type":"checkbox","name":"consent-push-notifications","selector":"#consent-push-notifications","propertyId":598,"consentValue":"checked"},{"type":"checkbox","name":"consent-personalised-offers","selector":"#consent-personalised-offers","propertyId":599,"consentValue":"checked"},{"type":"checkbox","name":"consent-analytics-research","selector":"#consent-analytics-research","propertyId":600,"consentValue":"checked"},{"type":"checkbox","name":"consent-surveys","selector":"#consent-surveys","propertyId":601,"consentValue":"checked"},{"type":"checkbox","name":"consent-events","selector":"#consent-events","propertyId":602,"consentValue":"checked"},{"type":"checkbox","name":"consent-loyalty","selector":"#consent-loyalty","propertyId":603,"consentValue":"checked"},{"type":"checkbox","name":"consent-partner-sharing","selector":"#consent-partner-sharing","propertyId":604,"consentValue":"checked"},{"type":"checkbox","name":"consent-cross-border","selector":"#consent-cross-border","propertyId":605,"consentValue":"checked"}],"consentTrigger":{"action":"submit","selector":""}},
+        url: 'https://app.securiti.ai/privaci/v1/',
+        cmpQuill:'6f8b260e-3814-421c-9441-dfe3aa4ffce7',
+        orgId:'1',
+        onConsentSuccess: null,
+        onConsentFailure: null
+    })
+})
+</script>
 
 </body>
 </html>
