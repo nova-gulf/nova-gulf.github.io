@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <!-- Securiti cookie consent. Auto-blocking MUST stay the first script in <head>:
+       no async, never inside a tag manager. The SDK loader follows it. -->
+  <script type="text/javascript" src="https://cdn-prod.securiti.ai/consent/auto_blocking/99e6777b-d10d-44b4-a2a4-6ee50ad5d806/f7450d10-7ff8-49ae-b8f8-a1dac34dd97c.js"></script>
+  <script>
+  (function () {
+    var s = document.createElement('script');
+    s.src = 'https://cdn-prod.securiti.ai/consent/cookie-consent-sdk-loader.js';
+    s.setAttribute('data-tenant-uuid', '99e6777b-d10d-44b4-a2a4-6ee50ad5d806');
+    s.setAttribute('data-domain-uuid', 'f7450d10-7ff8-49ae-b8f8-a1dac34dd97c');
+    s.setAttribute('data-backend-url', 'https://app.securiti.ai');
+    s.setAttribute('data-skip-css', 'false');
+    s.defer = true;
+    var parent_node = document.head || document.body;
+    parent_node.appendChild(s);
+  })()
+  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Consent Preferences — Nova Gulf</title>
+  <meta name="description" content="Choose how Nova Gulf may contact you and use your data. Every choice is separate, optional and can be withdrawn at any time.">
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="../index.html" aria-label="Nova Gulf home">
+        <svg width="38" height="38" viewBox="0 0 38 38" role="img" aria-hidden="true" focusable="false">
+          <circle cx="19" cy="19" r="18" fill="#0b2545"/>
+          <circle cx="19" cy="19" r="18" fill="none" stroke="#c9a227" stroke-width="1.5"/>
+          <text x="19" y="24.5" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-weight="700" fill="#ffffff">NG</text>
+        </svg>
+        <span class="brand-name">Nova Gulf<small>Preferences</small></span>
+      </a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="../index.html">Home</a>
+        <a href="../health-care/">Health Care</a>
+        <a href="../contact/">Contact</a>
+        <a href="./" aria-current="page">Preferences</a>
+        <a href="../privacy-center/" class="nav-cta">Privacy Center</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="demo-banner">
+    Demonstration environment — Nova Gulf is a fictional organization used for product demonstrations.
+  </div>
+
+  <section class="page-head">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="../index.html">Home</a> <span aria-hidden="true">/</span>
+        <span aria-current="page">Consent Preferences</span>
+      </nav>
+      <h1>Your consent preferences</h1>
+      <p>
+        Tell us how you would like to hear from us and how we may use your data. Every choice
+        is separate and optional, nothing is ticked for you, and you can change your mind at
+        any time. This page is designed to support the UAE Personal Data Protection Law
+        (Federal Decree-Law No. 45 of 2021).
+      </p>
+    </div>
+  </section>
+
+  <main id="main">
+
+    <div class="container">
+
+      <form class="form-card" id="preferences-form" novalidate>
+
+        <h2 class="form-title">Consent preferences</h2>
+        <p class="field-hint">
+          Fields marked <span class="req" aria-hidden="true">*</span> are required. Nothing else is:
+          you only need to give your name, your email address and confirm you have read the
+          <a href="../privacy-notice/">privacy notice</a>. Every consent below is your choice.
+        </p>
+
+        <div class="callout callout-warn">
+          <strong>This is a demonstration.</strong> Your name, phone number, gender and date of
+          birth stay in your browser. Only your email address and your consent choices are sent, to record
+          your consent. Do not enter real personal data.
+        </div>
+
+        <div class="form-summary" id="form-summary" role="alert" aria-live="assertive" tabindex="-1" hidden></div>
+
+        <fieldset>
+          <legend>About you</legend>
+          <p class="field-hint">We use your email address to find your record and apply your choices.</p>
+          <div class="form-row">
+            <div class="field">
+              <label for="first-name">First name <span class="req" aria-hidden="true">*</span></label>
+              <input type="text" id="first-name" name="first-name" autocomplete="given-name" required aria-describedby="err-first-name">
+              <p class="field-error" id="err-first-name" aria-live="polite"></p>
+            </div>
+            <div class="field">
+              <label for="last-name">Last name <span class="req" aria-hidden="true">*</span></label>
+              <input type="text" id="last-name" name="last-name" autocomplete="family-name" required aria-describedby="err-last-name">
+              <p class="field-error" id="err-last-name" aria-live="polite"></p>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="field">
+              <label for="email">Email <span class="req" aria-hidden="true">*</span></label>
+              <input type="email" id="email" name="email" autocomplete="email" required aria-describedby="err-email">
+              <p class="field-error" id="err-email" aria-live="polite"></p>
+            </div>
+            <div class="field">
+              <label for="phone">Phone <span class="field-optional">(optional)</span></label>
+              <input type="tel" id="phone" name="phone" autocomplete="tel" placeholder="+971 50 000 0000" aria-describedby="hint-phone err-phone">
+              <p class="field-hint" id="hint-phone">Needed only for the SMS, WhatsApp and phone call choices.</p>
+              <p class="field-error" id="err-phone" aria-live="polite"></p>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="field">
+              <label for="gender">Gender <span class="field-optional">(optional)</span></label>
+              <select id="gender" name="gender">
+                <option value="">Select (optional)</option>
+                <option value="prefer-not-to-say">Prefer not to say</option>
+                <option value="female">Female</option>
+                <option value="male">Male</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="dob">Date of birth <span class="field-optional">(optional)</span></label>
+              <input type="date" id="dob" name="dob" autocomplete="bday" aria-describedby="err-dob">
+              <p class="field-error" id="err-dob" aria-live="polite"></p>
+            </div>
+          </div>
+        </fieldset>
+
+        <div class="pref-bulk" role="group" aria-label="Shortcuts for the consent choices">
+          <span class="pref-bulk-label">Shortcuts for the 13 choices below:</span>
+          <button type="button" class="btn btn-secondary" id="btn-select-all">Select all</button>
+          <button type="button" class="btn btn-secondary" id="btn-clear-all">Clear all</button>
+        </div>
+
+        <fieldset>
+          <legend>Communication channels</legend>
+          <p class="field-hint">How we may contact you. Each channel is its own choice.</p>
+          <div class="checks pref-checks">
+            <label class="check-item" for="consent-email-marketing">
+              <input type="checkbox" id="consent-email-marketing" name="consent-email-marketing" data-consent>
+              <span><strong>Offers and promotions by email</strong><span class="pref-desc">We email you about Nova Gulf offers and promotions.</span></span>
+            </label>
+            <label class="check-item" for="consent-sms-whatsapp">
+              <input type="checkbox" id="consent-sms-whatsapp" name="consent-sms-whatsapp" data-consent>
+              <span><strong>Offers and reminders by SMS or WhatsApp</strong><span class="pref-desc">We message your phone number on SMS or WhatsApp with offers and reminders. Needs a phone number.</span></span>
+            </label>
+            <label class="check-item" for="consent-phone-calls">
+              <input type="checkbox" id="consent-phone-calls" name="consent-phone-calls" data-consent>
+              <span><strong>Marketing phone calls</strong><span class="pref-desc">We may call your phone number to talk about our services. Needs a phone number.</span></span>
+            </label>
+            <label class="check-item" for="consent-push-notifications">
+              <input type="checkbox" id="consent-push-notifications" name="consent-push-notifications" data-consent>
+              <span><strong>App and browser push notifications</strong><span class="pref-desc">We may send notifications to your app or browser.</span></span>
+            </label>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Content you want</legend>
+          <p class="field-hint">What we may send you, on the channels you chose above.</p>
+          <div class="checks pref-checks">
+            <label class="check-item" for="consent-newsletter">
+              <input type="checkbox" id="consent-newsletter" name="consent-newsletter" data-consent>
+              <span><strong>Monthly newsletter and insights</strong><span class="pref-desc">One email a month with articles and insights from Nova Gulf.</span></span>
+            </label>
+            <label class="check-item" for="consent-product-updates">
+              <input type="checkbox" id="consent-product-updates" name="consent-product-updates" data-consent>
+              <span><strong>Product and service announcements</strong><span class="pref-desc">Tell me when Nova Gulf launches or changes a product or service.</span></span>
+            </label>
+            <label class="check-item" for="consent-surveys">
+              <input type="checkbox" id="consent-surveys" name="consent-surveys" data-consent>
+              <span><strong>Surveys and market research</strong><span class="pref-desc">Invite me to take part in surveys and market research.</span></span>
+            </label>
+            <label class="check-item" for="consent-events">
+              <input type="checkbox" id="consent-events" name="consent-events" data-consent>
+              <span><strong>Events and webinars</strong><span class="pref-desc">Invite me to Nova Gulf events and webinars.</span></span>
+            </label>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Personalisation and analytics</legend>
+          <p class="field-hint">How we may use your details to tailor and improve what we offer.</p>
+          <div class="checks pref-checks">
+            <label class="check-item" for="consent-personalised-offers">
+              <input type="checkbox" id="consent-personalised-offers" name="consent-personalised-offers" data-consent>
+              <span><strong>Personalised offers (profiling)</strong><span class="pref-desc">We build a profile from your activity with us, using automated processing, so offers fit you better.</span></span>
+            </label>
+            <label class="check-item" for="consent-analytics-research">
+              <input type="checkbox" id="consent-analytics-research" name="consent-analytics-research" data-consent>
+              <span><strong>Analytics and service improvement</strong><span class="pref-desc">We use your data to understand how our services are used and to improve them.</span></span>
+            </label>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Sharing and transfers</legend>
+          <p class="field-hint">Who else may receive your details, and where they may go.</p>
+          <div class="checks pref-checks">
+            <label class="check-item" for="consent-partner-sharing">
+              <input type="checkbox" id="consent-partner-sharing" name="consent-partner-sharing" data-consent>
+              <span><strong>Sharing with selected partners</strong><span class="pref-desc">We share your name and contact details with selected partners so they can send you their own marketing.</span></span>
+            </label>
+            <label class="check-item" for="consent-cross-border">
+              <input type="checkbox" id="consent-cross-border" name="consent-cross-border" data-consent>
+              <span><strong>Transfer of my data outside the UAE</strong><span class="pref-desc">We may transfer your data outside the UAE for the purposes you chose above.</span></span>
+            </label>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Programmes</legend>
+          <p class="field-hint">Optional membership.</p>
+          <div class="checks pref-checks">
+            <label class="check-item" for="consent-loyalty">
+              <input type="checkbox" id="consent-loyalty" name="consent-loyalty" data-consent>
+              <span><strong>Loyalty programme</strong><span class="pref-desc">Enrol me in the Nova Gulf loyalty programme and use my data to run it.</span></span>
+            </label>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Privacy notice</legend>
+          <label class="declaration" for="ack-privacy-notice">
+            <input type="checkbox" id="ack-privacy-notice" name="ack-privacy-notice" required aria-describedby="err-ack-privacy-notice">
+            <span>
+              I have read the <a href="../privacy-notice/">privacy notice</a>.
+              <span class="req" aria-hidden="true">*</span>
+            </span>
+          </label>
+          <p class="field-hint">
+            This confirms you have seen how we handle your data. It is an acknowledgement, not a consent, and it is the only tick we need.
+          </p>
+          <p class="field-error" id="err-ack-privacy-notice" aria-live="polite"></p>
+        </fieldset>
+
+        <div class="form-actions">
+          <button type="submit" class="btn btn-primary">Save my preferences</button>
+          <button type="reset" class="btn btn-secondary">Clear the form</button>
+        </div>
+        <p class="form-error" id="form-error" role="alert"></p>
+
+      </form>
+
+      <div class="confirm-panel wifi-confirm" id="confirm-panel" tabindex="-1" role="region" aria-label="Consent receipt">
+        <h2>Your preferences are recorded</h2>
+        <p>
+          This is your consent receipt. Nothing is stored in your browser, so keep a copy if you
+          want one. You can change any choice at any time by visiting this page again.
+        </p>
+        <span class="confirm-ref" id="confirm-ref">—</span>
+
+        <table class="confirm-summary">
+          <caption>Receipt and identity</caption>
+          <tbody id="confirm-session-body"></tbody>
+        </table>
+
+        <table class="confirm-summary consent-table">
+          <caption>Consent — one decision per purpose</caption>
+          <thead>
+            <tr><th scope="col">Purpose</th><th scope="col" class="col-basis">Lawful basis</th><th scope="col">Your decision</th></tr>
+          </thead>
+          <tbody id="confirm-consent-body"></tbody>
+        </table>
+
+        <div class="confirm-actions">
+          <button type="button" class="btn btn-secondary" id="btn-copy">Copy this receipt</button>
+          <button type="button" class="btn btn-primary" id="btn-again">Start over</button>
+        </div>
+      </div>
+
+    </div>
+
+    <section class="section section-alt">
+      <div class="container">
+        <h2>What we do with each choice</h2>
+        <p class="section-intro">
+          Each purpose stands on its own. The lawful basis for every one of them is your
+          consent, and we keep the choice until you withdraw it.
+        </p>
+        <div class="table-wrap">
+          <table class="data-table">
+            <caption class="visually-hidden">Purpose, lawful basis and retention for each consent choice</caption>
+            <thead>
+              <tr><th scope="col">What you agree to</th><th scope="col">Lawful basis</th><th scope="col">Kept for</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Name and email address (to find your record)</td><td><span class="pill">Consent</span></td><td>Until you withdraw</td></tr>
+              <tr><td>Marketing by email</td><td><span class="pill">Consent</span></td><td>Until you withdraw</td></tr>
+              <tr><td>Marketing by SMS or WhatsApp</td><td><span class="pill">Consent</span></td><td>Until you withdraw</td></tr>
+              <tr><td>Marketing phone calls</td><td><span class="pill">Consent</span></td><td>Until you withdraw</td></tr>
+              <tr><td>Push notifications</td><td><span class="pill">Consent</span></td><td>Until you withdraw</td></tr>
+              <tr><td>Monthly newsletter</td><td><span class="pill">Consent</span></td><td>Until you withdraw</td></tr>
+              <tr><td>Product and service announcements</td><td><span class="pill">Consent</span></td><td>Until you withdraw</td></tr>
+              <tr><td>Survey and research invitations</td><td><span class="pill">Consent</span></td><td>Until you withdraw</td></tr>
+              <tr><td>Event and webinar invitations</td><td><span class="pill">Consent</span></td><td>Until you withdraw</td></tr>
+              <tr><td>Profiling for personalised offers</td><td><span class="pill">Consent</span></td><td>Until you withdraw</td></tr>
+              <tr><td>Analytics and service improvement</td><td><span class="pill">Consent</span></td><td>Until you withdraw</td></tr>
+              <tr><td>Sharing with partners for their marketing</td><td><span class="pill">Consent</span></td><td>Until you withdraw</td></tr>
+              <tr><td>Transfer outside the UAE</td><td><span class="pill">Consent</span></td><td>Until you withdraw</td></tr>
+              <tr><td>Loyalty programme</td><td><span class="pill">Consent</span></td><td>Until you withdraw</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="callout">
+          <strong>You can withdraw at any time.</strong> Withdrawing is as easy as giving. Visit
+          this page again and clear a choice, or use the
+          <a href="../dsr-request/">data request form</a>. You do not need to give a reason, and
+          declining a choice has no effect on the services you use. Read how we handle your data in the
+          <a href="../privacy-notice/">privacy notice</a>.
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="contact-band">
+          <div>
+            <h2>Want more than a preference change?</h2>
+            <p>Ask what we hold about you, or have it corrected or deleted, in the Privacy Center.</p>
+          </div>
+          <a href="../privacy-center/" class="btn btn-primary">Go to the Privacy Center</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <span>© 2026 Nova Gulf Group.</span>
+      <span class="footer-links">
+        <a href="../index.html">Home</a>
+        <a href="../contact/">Contact us</a>
+        <a href="../privacy-center/">Privacy Center</a>
+        <a href="../privacy-notice/">Privacy Notice</a>
+      </span>
+      <span>Nova Gulf is a fictional organization used for product demonstrations.</span>
+    </div>
+  </footer>
+
+  <script src="../assets/js/preferences.js"></script>
+
+  <!-- Cookie tag layer — demonstration only, see assets/js/tag-*.js. Same twelve scripts as the home page. -->
+  <script src="../assets/js/tag-analytics.js"></script>
+  <script src="../assets/js/tag-advertising.js"></script>
+  <script src="../assets/js/tag-performance.js"></script>
+  <script src="../assets/js/tag-social.js"></script>
+  <script src="../assets/js/tag-essential.js"></script>
+  <script src="../assets/js/tag-functional.js"></script>
+  <script src="../assets/js/tag-marketing-automation.js"></script>
+  <script src="../assets/js/tag-abtesting.js"></script>
+  <script src="../assets/js/tag-embeds.js"></script>
+  <script src="../assets/js/tag-geolocation.js"></script>
+  <script src="../assets/js/tag-biometrics.js"></script>
+  <script src="../assets/js/tag-unclassified.js"></script>
+
+  <!-- SECURITI-FORM-CONSENT-SNIPPET: master pastes the generated snippet here -->
+
+</body>
+</html>

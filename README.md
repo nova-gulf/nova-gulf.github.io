@@ -7,6 +7,7 @@ partners, or customer stories on this site are real.
 - `/`                 corporate home page
 - `/contact/`         contact page — enquiry form, mailboxes, and office list
 - `/wifi/`            guest Wi-Fi registration with per-purpose consent choices
+- `/preferences/`     consent and communication preferences, 13 separate consent choices
 - `/privacy-center/`  the data subject request types this site accepts
 - `/dsr-request/`     the request form, embedded from a hosted privacy platform
 

@@ -990,3 +990,15 @@ legend {
 .hc-form .detail { margin: 6px 0 4px 34px; }
 .hc-form .detail[hidden] { display: none; }
 .hc-form input[type="text"], .hc-form input[type="tel"], .hc-form input[type="email"] { min-height: 48px; font-size: 1rem; }
+
+/* ---------- Consent preferences page ---------- */
+
+.pref-checks { grid-template-columns: 1fr; }
+.pref-desc { display: block; margin-top: 2px; color: var(--muted); font-size: 0.9rem; }
+.pref-bulk { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; margin: 0 0 18px; }
+.pref-bulk-label { color: var(--muted); font-size: 0.9rem; }
+.field-error { color: var(--danger); font-size: 0.88rem; font-weight: 600; margin: 4px 0 0; }
+.field-error:empty { display: none; }
+.field input[aria-invalid="true"], .field select[aria-invalid="true"] { border-color: var(--danger); }
+.form-summary { border: 1px solid var(--danger); border-radius: 10px; padding: 12px 14px; margin: 0 0 16px; color: var(--danger); font-weight: 600; font-size: 0.92rem; }
+.form-summary[hidden] { display: none; }
